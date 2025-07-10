@@ -1,0 +1,106 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+body{
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    background-image: url('images/background.png');
+    /* border: 1px solid rgb(240, 225, 187); */
+    margin: 0px;
+    padding: 0px;
+    width: 1200px;
+   margin: 0px auto;
+}
+/* shared styles */
+.font-color-primary{
+ color: #56DFCF;
+}
+
+/* nav related styles */
+
+nav{
+   font-size: 1.3rem;
+    font-weight: 600;
+}
+.navbar{
+    display: flex;
+   justify-content: space-between;
+   margin: 15px 15px ;
+   
+}
+.nav-icon{
+    display: none;
+}
+.nav-taitles-continer{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+.nav-taitles-continer img{
+    width: 70px;
+    height: auto;
+    border: 1.5px solid rgb(62, 27, 241);
+    border-radius: 180px;
+    padding: 5px;
+     cursor: pointer;
+    transition: 0.4s;
+}
+.nav-taitles-continer img:hover{
+    transform: scale(1.2);
+}
+.nav-item{
+    display: flex;
+    gap: 40px;
+    list-style: none;
+}
+.nav-item li{
+    cursor: pointer;
+    transition: 0.5s;
+}
+.nav-item li:hover{
+      transform: scale(1.2);
+      border-bottom: 2px solid darkkhaki;
+      color: beige;
+}
+
+
+/* responsive part */
+
+/* small device */
+
+@media screen and (max-width: 576px) {
+    body{
+        width: 100%;
+    }
+    
+    .navbar{
+        /* display: grid;
+        grid-template-columns: repeat(1, 1fr); */
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .nav-taitles-continer{
+        display: grid;
+        margin-left: 0px;
+        font-size: 1.2rem;
+        text-align: center;
+  }
+    .nav-taitles-continer img {
+        margin: 0px auto;
+        width: 40%;
+        height: auto;
+        border: none;
+    }
+    .nav-taitles {
+        margin-top: 3px;
+    }
+    .nav-item{
+        margin-top: 3px;
+        font-size: .8rem;
+        text-align: center;
+    }
+}
+
+
+/* medium device  */
+
