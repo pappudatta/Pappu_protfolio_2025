@@ -190,6 +190,12 @@ nav{
         padding: 9px;
         font-size: .8rem;
         align-items: center;
+        cursor: pointer;
+        transition: transform 0.3s;
+    }
+    .btn-primary:hover{
+        background-color: rgb(6, 126, 126);
+        transform: scale(1.1);
     }
     .intro-catagory{
         font-size: 2rem;
