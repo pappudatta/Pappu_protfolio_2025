@@ -15,6 +15,22 @@ body{
 .font-color-primary{
  color: #56DFCF;
 }
+.btn-primary{
+    font-size: 1rem;
+    padding: 25px;
+    color: #f8f5f5;
+    background-color: rgb(56, 64, 219);
+    border-style: none;
+    border-radius: 10px;
+    margin-right: 10px;
+    width: 200px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+.btn-primary:hover{
+    background-color: rgb(6, 126, 126);
+    transform: scale(1.1);
+}
 
 /* nav related styles */
 
@@ -23,7 +39,7 @@ nav{
     font-weight: 600;
 }
 .navbar{
-    display: flex;
+   display: flex;
    justify-content: space-between;
    margin: 15px 15px ;
    
@@ -63,6 +79,58 @@ nav{
       color: beige;
 }
 
+/* intro-part section  */
+
+.intro-part-front-color{
+    color: #ffff;
+}
+.intro-hello{
+ font-size: 1.5rem;
+ font-weight: 600;
+ 
+}
+
+.intro-taitle{
+    font-size: 2rem;
+    font-weight: 700;
+}
+.name{
+    color: rgb(241, 8, 8);
+}
+.intro-catagory{
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+.catagory-name{
+    color: #4E71FF;
+}
+.intro-part{
+    display: flex;
+    justify-content: space-between;
+}
+.hero-section{
+    margin-top: 85px;
+    /* border: 2px solid hotpink; */
+}
+.profile-pic img{
+    width: 600px;
+    margin-top: -50px;
+    /* border: 2px solid hotpink; */
+}
+
+/* section about me */
+.about-me{
+    text-align: center;
+}
+.about_me{
+    font-size: 2.2rem;
+}
+.about-description{
+    font-size: 1.2rem;
+    color: #ffff;
+    margin: 0px 35px 0px 35px;
+    line-height: 25px;
+}
 
 /* responsive part */
 
@@ -71,6 +139,9 @@ nav{
 @media screen and (max-width: 576px) {
     body{
         width: 100%;
+    }
+    .hide{
+        display: none;
     }
     
     .navbar{
@@ -98,6 +169,36 @@ nav{
         margin-top: 3px;
         font-size: .8rem;
         text-align: center;
+    }
+    .intro-part{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .profile-pic img{
+        width: 100%;
+        height: auto;
+        margin: 15px auto 10px auto;
+    }
+    .hero-section{
+        margin: -45px auto;
+        align-items: center;
+        text-align: center;
+    }
+
+    .btn-primary{
+        width: 40%;
+        padding: 9px;
+        font-size: .8rem;
+        align-items: center;
+    }
+    .intro-catagory{
+        font-size: 2rem;
+    }
+    .about-description{
+        margin-top: 5px;
+        font-size: 1rem;
+        text-align: justify;
+        
     }
 }
 
